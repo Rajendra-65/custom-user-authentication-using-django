@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            {%block title%} {% endblock title%}
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        <link rel="stylesheet" href="{%static '/css/dist/styles.css'%}">
+    </head>
+    <body class="bg-gray-50 font-serif leading-normal tracking-normal">
+        <div class='bg-gray-900 p-4 flex justify-around items-center place-items-center'>
+            <h1 class='text-2xl font-bold'>Auth System</h1>
+            <div class='flex justify-between'>
+                <h1>Home</h1>
+                <h1>Register</h1>
+                <h1>LogIn</h1>
+            </div>
+        </div>
+        {%block conetent%}
+
+        {%endblock content%}
+        <script src="" async defer></script>
+    </body>
+</html>
