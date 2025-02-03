@@ -1,0 +1,15 @@
+p{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+}
+
+.book-reg-form{
+    color:white;
+}
+
+p input{
+    border-radius: 10px;
+    background-color: rgba(169, 169, 169, 0);
+    width: 59vw;
+}

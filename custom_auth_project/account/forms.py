@@ -2,10 +2,10 @@ from django import forms
 from account.models import User
 
 class RegistrationForm(forms.ModelForm):
-    password = forms.Charfield(
+    password = forms.CharField(
         widget = forms.PasswordInput
     )
-    confirmPassword = forms.Charfield(
+    confirm_password = forms.CharField(
         widget = forms.PasswordInput
     )
     class Meta:

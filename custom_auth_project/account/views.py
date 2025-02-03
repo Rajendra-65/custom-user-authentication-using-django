@@ -5,5 +5,6 @@ from account.forms import RegistrationForm
 def register(request):
     if request.method == "POST":
         pass
-    form = RegistrationForm()
-    return render('/register','account/register.html',{'form':form})
+    else:
+        form = RegistrationForm()
+    return render(request,'account/register.html',{'form':form})
